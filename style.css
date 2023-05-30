@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  width: 60%;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: black;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+ul {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+}
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+a:hover {
+  color: green;
+}
+
+.container {
+  width: 1000px;   /* Définit la largeur */
+  margin: 0 auto; /* Définit automatiquement les marges à gauche/droite */
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 0px 4px grey;
+}
+
+img {
+  transform: rotate(3600deg);
+  width : 300px;
+  transition: 3s ease-in-out;
+  border-radius: 50% 10px;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+  img {
+    display: none;
+  }
+}
